@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <title>Markdown -> React</title>
+
+    <style>
+        *, *:before, *:after {
+            -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+        }
+
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        #application, .markdown-container {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .markdown-textarea {
+            position: absolute;
+            width: 50%;
+            left: 0;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            border: none;
+            border-right: 1px solid #ddd;
+            padding: 20px;
+        }
+
+        .markdown-preview {
+            background-color: #f9f9f9;
+            position: absolute;
+            width: 50%;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            overflow: auto;
+            padding: 20px;
+        }
+
+        textarea {
+            width: 50%;
+            height: 500px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="application"></div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/lib/underscore.js"></script>
+    <script src="js/lib/react-with-addons.js"></script>
+    <script src="js/lib/JSXTransformer.js"></script>
+    <script src="js/lib/markdown.js"></script>
+
+    <script src="js/src/markdown.jsx" type="text/jsx"></script>
+</body>
+</html>
