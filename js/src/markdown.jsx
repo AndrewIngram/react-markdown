@@ -217,9 +217,6 @@ var componentFromMarkdownArray = function(refs, data) {
     var nodeType = data[0];
     var children = data.slice(1);
 
-    console.log(nodeType);
-    console.log(children);
-
     var componentType = markdownComponentMap[nodeType];
 
     return <componentType children={children} refs={refs} />;
@@ -233,8 +230,6 @@ var MarkdownRenderer = React.createClass({
 
         if (mdNodes.length > 0 && mdNodes[0].references !== undefined) {
             refs = mdNodes[0].references;
-
-            console.log(refs);
 
             var mdNodes = mdNodes.slice(1);
         }
